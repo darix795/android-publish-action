@@ -1,0 +1,15 @@
+name: "Publish Android"
+description: "Publish app bundle to Google Play"
+inputs:
+  key-file:
+    description: "JSON key file"
+    required: true
+  aab-file:
+    description: "App bundle file"
+    required: true
+  package-name:
+    description: "Reverse url name"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
